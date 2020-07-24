@@ -1,0 +1,89 @@
+.push-notifications{  
+    &__top{
+        padding: 20px;
+        h2{
+            font-size: 17px;
+            font-weight: bold;
+        }
+        p{
+            color: #848484;
+        }
+        &--search{
+            input{
+                padding: 23px 16px;
+            }
+        }
+        &--articleNum{
+            input{
+                padding: 23px 16px;
+            }
+        }
+        &--send{
+            button {
+              padding: 0;
+              background: #3385cf;
+              border: 0;
+              color: #fff;
+              &:hover{
+                color: #fff;;
+              }
+            }
+            span {
+              font-size: 15px;
+              padding: 30px;
+            }
+            i {
+              background: #4590d3;
+              padding: 14px;
+              margin-right: 0 !important;
+              color: #fff;
+              border: 0;
+              font-size: 20px !important;
+              border-top-right-radius: 0.3em;
+              border-bottom-right-radius: 0.3em;
+            }
+        }
+    }
+    &__body{
+        .nav {
+            background: #3385cf;
+            padding: 8px 8px 0;
+            font-weight: bold;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+            .nav-link {
+              border: 0;
+              padding: 9px 21px;
+              color: #7da9dc;
+              font-size: 14px;
+              &:hover {
+                border: 0;
+                color: #7da9dc;
+              }
+              &.active {
+                color: rgba(50, 133, 207, 0.98);
+                border: 0;
+                background-color: #f5f7fb;
+                font-size: 14px;
+              }
+            }
+        }
+        .tab-content{
+            padding: 12px;
+            border: solid 1px #dedede;
+            border-top: 0;
+            border-radius: 0 0 4px 4px;
+            table{
+                td{
+                    .copy{
+                        background: #3385cf;
+                        color: #fff;
+                        padding: 6px 7px;
+                        font-size: 13px;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }      
+}

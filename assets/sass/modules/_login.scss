@@ -1,0 +1,150 @@
+body{
+    font-family: $main-font;
+    .login{
+        background: url(../img/login-background.jpg) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height:100%;
+        &__login-form{
+          background-color: #fff;
+          height: 100vh;
+          text-align: right;
+          padding: 70px 45px 0 45px;
+          @media screen and (min-width: 900px){
+            margin-right: -18px;
+          }
+          .logo{
+            svg{
+                width: 150px;
+                height: 45px;
+            }
+            p{
+                color: #868e96;
+            }
+          }
+          .login-input-group{
+            position: relative;
+            margin-top: 40px;
+            p{
+                margin-bottom: 5px
+            }
+              &__login-input{
+                padding-right: 40px;
+                background-color: #EFF8FF;
+                border: none;
+                text-align: right;
+                &:focus{
+                    box-shadow: none;
+                }
+              }
+              &__icon{
+                position: absolute;
+                right: 0;
+                top: 30px;
+                padding: 9px 8px;
+                transition: 0.3s;
+                width: 35px;
+                height: 38px;
+                fill: #597195;
+              }
+          }
+          .remember-password{
+            .remember{
+              .remember-text{
+                font-size: 13px;
+                font-weight: bold;
+              }
+            }
+            
+            #cbx {
+              display: none;
+              &:checked + .cbx{
+                border-color: #0b76ef;
+              }
+              &:checked + .cbx .flip {
+                transform: rotateY(180deg);
+              }
+            }
+            .cbx {
+              -webkit-perspective: 20;
+              perspective: 20;
+              position: relative;
+              top: 14px;
+              border: 2px solid #e8e8eb;
+              background: #e8e8eb;
+              border-radius: 4px;
+              transform: translate3d(0, 0, 0);
+              cursor: pointer;
+              transition: all 0.3s ease;
+              &:hover{
+                border-color: #0b76ef;
+              }
+              .flip {
+                display: block;
+                transition: all 0.4s ease;
+                transform-style: preserve-3d;
+                position: relative;
+                width: 13px;
+                height: 13px;
+                .front,.back {
+                  backface-visibility: hidden;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 13px;
+                  height: 13px;
+                  border-radius: 2px;
+                }
+                .front {
+                  background: #eff8ff;
+                  z-index: 1;
+                }
+                .back {
+                  transform: rotateY(180deg);
+                  background: #0b76ef;
+                  text-align: center;
+                  color: #fff;
+                  line-height: 20px;
+                  box-shadow: 0 0 0 1px #0b76ef;
+                  svg {
+                    // margin-top: 3px;
+                    fill: none;
+                    position: relative;
+                    top: -2px;
+                    path {
+                      stroke: #fff;
+                      stroke-width: 2.5;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                    }
+                  }
+                }
+              }
+            }
+            .forget{
+              a{
+                font-size: 14px;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+}
+.clear{
+  clear: both;
+}
+.pull-right{
+  float: right;
+}
+
+.pull-left{
+  float: left;
+}
+
+
+
+
+
+
+
