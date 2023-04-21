@@ -18,7 +18,7 @@
     "@nuxtjs/auth": "^4.8.4",
     "@nuxtjs/axios": "^5.8.0",
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "laravel-permissions": "^1.5.3",
     "laravel-vue-pagination": "^2.3.1",
     "laravel-vue-validator": "^1.0.7",
